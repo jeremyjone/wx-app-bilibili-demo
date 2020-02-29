@@ -1,0 +1,95 @@
+/* pages/detail/detail.wxss */
+.main{
+  padding: 10rpx;
+  color: #666;
+}
+
+/* 视频 */
+.video_info{
+  margin-top: 10rpx;
+}
+
+.video_info .video_id{
+  font-weight: bold;
+}
+
+.video_info video{
+  width: 100%;
+}
+
+.video_title{
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+}
+
+.video_detail{
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+
+.video_detail .author{
+  color: #000;
+}
+
+.video_detail .play_count{}
+
+.video_detail .comment_count{}
+
+.video_detail .date{}
+
+.video_detail text{
+  margin-right: 10rpx;
+}
+
+
+/* 推荐列表 */
+.other_list{
+  margin-top: 50rpx;
+}
+
+.item_other{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+}
+
+.other_img_wrap{
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rpx;
+}
+
+.other_img_wrap image{
+  border-radius: 15rpx;
+}
+
+.other_info{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.other_info .title{
+  font-size: 28rpx;
+  color: rgb(253, 161, 176);
+  display: -webkit-box;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.other_info .detail{
+  font-size: 26rpx;
+  color: #ccc;
+}
+
+.other_info .detail text{
+  margin-right: 10rpx;
+}

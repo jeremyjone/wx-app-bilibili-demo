@@ -1,0 +1,16 @@
+<view class="title_view">
+  <!-- logo -->
+  <navigator class="title_logo">
+    <image class="title_logo_img" src="../../icons/logo.png"></image>
+  </navigator>
+  <!-- 搜索 -->
+  <view class="title_search">
+    <image class="title_search_img" src="../../icons/search.png"></image>
+  </view>
+  <!-- 用户 -->
+  <view class="title_user">
+    <image class="title_user_img" src="../../icons/tv.png"></image>
+  </view>
+  <!-- 下载 -->
+  <view class="title_down">下载 APP</view>
+</view>

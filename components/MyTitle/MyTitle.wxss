@@ -1,0 +1,52 @@
+/* components/MyTitle/MyTitle.wxss */
+.title_view {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff;
+}
+
+.title_logo {
+  flex: 7;
+}
+
+.title_logo_img {
+  width: 140rpx;
+  height: 60rpx;
+}
+
+.title_search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_search_img {
+  width: 60rpx;
+  height: 44rpx;
+}
+
+.title_user {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_user_img {
+  width: 50rpx;
+  height: 60rpx;
+}
+
+.title_down {
+  flex: 3;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: pink;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}

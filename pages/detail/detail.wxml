@@ -1,0 +1,45 @@
+<!--pages/detail/detail.wxml-->
+<view class="main">
+  <MyTitle></MyTitle>
+  <!-- 视频组件 -->
+  <view class="video_info">
+    <!-- 视频ID -->
+    <text class="video_id">视频ID：{{videoId}}</text>
+    <!-- 视频标签 -->
+    <video src="{{videoInfo.url}}" controls></video>
+    <!-- 视频标题 -->
+    <view class="video_title">{{videoInfo.title}}</view>
+    <!-- 视频作者 -->
+    <view class="video_detail">
+      <!-- 作者 -->
+      <text class="author">{{videoInfo.author}}</text>
+      <!-- 播放量 -->
+      <text class="play_count">{{videoInfo.view}}次观看</text>
+      <!-- 评论数 -->
+      <text class="comment_count">{{videoInfo.reply}}弹幕</text>
+      <!-- 时间 -->
+      <text class="date">{{videoInfo.date}}</text>
+    </view>
+  </view>
+
+  <!-- 推荐列表 -->
+  <view class="other_list">
+    <navigator url="./detail?id={{item.stat.aid}}" class="item_other" wx:for="{{recommentList}}" wx:key="index">
+      <!-- 左侧图片 -->
+      <view class="other_img_wrap">
+        <image mode="widthFix" src="{{item.pic}}"></image>
+      </view>
+      <!-- 右侧视频详情 -->
+      <view class="other_info">
+        <!-- 标题 -->
+        <text class="title">{{item.title}}</text>
+        <view class="detail">
+          <!-- 播放量 -->
+          <text>{{item.stat.view}}次观看</text>
+          <!-- 弹幕 -->
+          <text>{{item.stat.danmaku}}弹幕</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
